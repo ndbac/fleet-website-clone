@@ -24,7 +24,7 @@ function Home() {
         <TravelInfo />
       </section>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

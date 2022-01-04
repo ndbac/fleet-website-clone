@@ -13,9 +13,25 @@ body {
   margin-left: 72rem;
 }
 
+.pr-21 {
+  padding-right: 5.32rem;
+}
+
 @media (min-width: 640px) {
   .mdml-max {
-    margin-left: 72rem;
+    margin-left: 48rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .mdml-fit {
+    margin-left: 30rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lgml-max {
+    margin-left: 48rem;
   }
 }
 
@@ -35,8 +51,52 @@ body {
   margin-top: 32rem;
 }
 
+.mt-max {
+  margin-top: 38rem;
+}
+
+@media (min-width: 640px) {
+  .mdmt-100 {
+    margin-top: 32rem;
+  }
+}
+
+.max-h-mobile {
+  max-height: 56rem;
+}
+
 .ml-100 {
   margin-left: 28rem;
+}
+
+@media (min-width: 1024px) {
+  .lgml-100 {
+    margin-left: 46rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .mdml-100 {
+    margin-left: 28rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .mdfit-100 {
+    margin-left: 18rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .mdml-52 {
+    margin-left: 13rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lgml-100 {
+    margin-left: 28rem;
+  }
 }
 
 .swiper {

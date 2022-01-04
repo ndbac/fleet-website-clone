@@ -6,7 +6,7 @@ import appraisal1 from "../../../assets/Travel/appraisal-pic-1.png";
 function Travel() {
   return (
     <div className="container max-w-screen-xl mt-48 mx-auto">
-      <div className="text-center max-w-2xl mx-auto">
+      <div className="wow fadeInUp text-center max-w-2xl mx-auto">
         <h1 className="font-bold text-5xl text-slate-900">
           Travel to make memories all around the world
         </h1>
@@ -14,8 +14,8 @@ function Travel() {
           Find trips that fit a flexible lifestyle
         </h2>
       </div>
-      <div className="grid grid-cols-2 mt-20">
-        <div className="w-96 ml-20 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-20">
+        <div className="wow fadeInRight md:w-96 mx-4 md:ml-8 lg:ml-20 md:mt-10">
           <div>
             <h1 className="bg-blue-300 w-12 rounded-full text-center font-bold text-white mb-5">
               01
@@ -52,15 +52,32 @@ function Travel() {
               built in React Native
             </p>
           </div>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-5 py-3 rounded-full transition ease-in-out duration-700">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold mb-10 px-5 py-3 rounded-full transition ease-in-out duration-700">
             Start your search
           </button>
         </div>
         <div>
-          <img src={travel1} className="float-right rounded-3xl mr-20 flex" />
-          <img src={appraisal1} className="absolute ml-12 mt-72 rounded-full shadow-lg"/>
-          <img src={appraisal1} className="absolute mt-90 ml-100 rounded-full shadow-lg"/>
-          <img src={appraisal1} className="absolute mt-100 rounded-full shadow-lg"/>
+          <img
+            src={appraisal1}
+            className="wow fadeInLeft absolute w-5/12 mt-48 lg:w-64 md:ml-12 md:mt-64 lg:mt-48 rounded-full shadow-lg"
+            data-wow-delay=".8s"
+          />
+          <img
+            src={appraisal1}
+            className="wow fadeInLeft absolute w-5/12 mt-96 ml-16 lg:w-64 lg:ml-36 rounded-full shadow-lg"
+            data-wow-delay="1.6s"
+          />
+          <img
+            src={appraisal1}
+            className="wow fadeInRight absolute w-5/12 mt-72 ml-52 lg:w-64 md:ml-16 md:mt-28 lg:ml-64 rounded-full shadow-lg"
+            data-wow-delay="1.2s"
+          />
+          <div className="wow fadeInLeft mx-4 md:mx-0 flex justify-center">
+            <img
+              src={travel1}
+              className="float-right rounded-3xl lg:w-fit flex"
+            />
+          </div>
         </div>
       </div>
     </div>

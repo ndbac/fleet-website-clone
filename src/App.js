@@ -1,8 +1,9 @@
-import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
+
+import "./animate.css"
 
 function App() {
   return (

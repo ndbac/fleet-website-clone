@@ -5,6 +5,11 @@ import Language from "./Language";
 import Notice from "./Notice";
 import DropDown from "./DropDown";
 
+import { BiBell } from "react-icons/bi";
+import { FaBars } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
+import { GrLanguage } from "react-icons/gr";
+
 import Logo from "../../assets/Logo/logo-dark.svg";
 import Avatar2 from "../../assets/Char/avatar-2.jpg";
 
@@ -30,20 +35,22 @@ function Header() {
   };
 
   return (
-    <div className="flex md:py-6 py-4 justify-center text-lg">
-      <div className="mr-6 md:ml-20 md:mr-4">
+    <div
+      className="grid grid-cols-5 md:grid-cols-10 py-4 md:mt-5 items-center max-w-screen-lg mx-auto"
+    >
+      <div className="col-span-2">
         <img
           src={Logo}
-          className="mt-1 md:pr-10 md:border-r-2 cursor-pointer"
+          className="h-10 pr-10 ml-5 lg:border-r-2 cursor-pointer"
         />
       </div>
 
-      <div className="hidden md:flex mr-10">
+      <div className="col-span-2 hidden md:block">
         <h1
           className={
             traveler
-              ? "text-left font-bold mt-2 text-slate-900 cursor-pointer pr-48 pl-12"
-              : "text-left font-bold mt-2 text-slate-500 hover:text-slate-900 cursor-pointer pr-48 pl-12"
+              ? "text-left ml-5 font-bold text-slate-900 cursor-pointer"
+              : "text-left ml-5 font-bold text-slate-500 hover:text-slate-900 cursor-pointer"
           }
           onClick={handleTraveler}
         >
@@ -52,18 +59,18 @@ function Header() {
         {traveler && <Travelers />}
       </div>
 
-      <div className="hidden md:flex mr-10">
-        <h1 className="font-bold mt-2 text-slate-500 hover:text-slate-900 cursor-pointer">
+      <div className="hidden md:block">
+        <h1 className="font-bold text-slate-500 hover:text-slate-900 cursor-pointer">
           Support
         </h1>
       </div>
 
-      <div className="hidden md:flex mr-10">
+      <div className="hidden md:block">
         <h1
           className={
             language
-              ? "font-bold mt-2 text-slate-900 cursor-pointer"
-              : "font-bold mt-2 text-slate-500 hover:text-slate-900 cursor-pointer"
+              ? "font-bold text-slate-900 cursor-pointer"
+              : "font-bold text-slate-500 hover:text-slate-900 cursor-pointer"
           }
           onClick={handleLanguage}
         >
@@ -72,27 +79,26 @@ function Header() {
       </div>
       {language && <Language />}
 
-      <div className="hidden md:flex mr-10">
-        <button className="font-bold text-slate-500 border hover:bg-slate-800 hover:text-white rounded-full py-2 px-4">
+      <div className="hidden col-span-2 md:block ml-4">
+        <button className="lg:px-4 lg:py-2 px-1 py-1 font-bold text-slate-500 border hover:bg-slate-800 hover:text-white rounded-full">
           List your property
         </button>
       </div>
 
-      <div className={dropdown ? "invisible ml-12 mr-5 md:mr-5" : "ml-12 mr-5 md:mr-5"}>
-        <i
-          className="far fa-bell fa-lg mt-3 cursor-pointer icon-base"
+      <div className={dropdown ? "invisible" : "ml-12"}>
+        <span>
+          <span className="rounded-full h-3 w-3 bg-green-500 ml-6 mt-1 absolute"></span>
+        </span>
+        <BiBell
           onClick={handleNotice}
-        >
-          <span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 mb-2"></span>
-          </span>
-        </i>
+          className="cursor-pointer w-8 h-8 mt-2 text-slate-500"
+        />
       </div>
 
       {notice && <Notice />}
 
-      <div className={dropdown ? "invisible md:mr-10 mr-1" : "md:mr-10 mr-1"}>
-        <img src={Avatar2} className="mt-1 h-10 w-10 cursor-pointer" />
+      <div className={dropdown ? "invisible" : "ml-4"}>
+        <img src={Avatar2} className="h-10 w-10 ml-5 md:ml-0 cursor-pointer" />
       </div>
 
       <div className="md:hidden flex items-center ml-4">
@@ -100,18 +106,11 @@ function Header() {
           className="outline-none mobile-menu-button"
           onClick={handleDropDown}
         >
-          <svg
-            className="w-12 h-12"
-            x-show="!showMenu"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+          {dropdown ? (
+            <IoMdClose className="w-10 h-10" />
+          ) : (
+            <FaBars className="w-8 h-8" />
+          )}
         </button>
       </div>
 

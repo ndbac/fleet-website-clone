@@ -2,7 +2,7 @@ import React from "react";
 
 function DropDown() {
   return (
-    <div className="absolute mt-16 min-h-fit pb-20 container bg-white md:hidden rounded-b-2xl shadow-lg">
+    <div className="wow fadeInLeft absolute mt-max min-h-fit pb-20 container bg-white md:hidden rounded-b-2xl shadow-lg">
       <div>
         <div className="border-l-4 border-blue-900 py-3 mt-10">
           <h1 className="font-bold text-2xl ml-12 text-slate-900">Stays</h1>

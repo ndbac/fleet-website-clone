@@ -4,8 +4,8 @@ import Avatar1 from "../../assets/Char/avatar-1.jpg";
 
 function Notice() {
   return (
-    <div className="absolute mdml-max mt-8">
-      <div className="mt-8 bg-white shadow-lg rounded-2xl py-2 px-4 md:py-4 md:px-8">
+    <div className="wow fadeInUp absolute mdml-fit lgml-max ml-12 mt-90">
+      <div className="bg-white shadow-lg rounded-2xl py-2 px-4 md:py-4 md:px-8">
         <h1 className="font-bold text-2xl mb-8 text-left">Notifications</h1>
 
         <div className="grid grid-cols-3 text-left items-center">
