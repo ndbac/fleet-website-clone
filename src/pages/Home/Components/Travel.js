@@ -56,26 +56,26 @@ function Travel() {
             Start your search
           </button>
         </div>
-        <div>
+        <div className="max-w-screen-full relative overflow-hidden">
           <img
             src={appraisal1}
-            className="wow fadeInLeft absolute w-5/12 mt-48 lg:w-64 md:ml-12 md:mt-64 lg:mt-48 rounded-full shadow-lg"
+            className="wow fadeInLeft absolute w-4/12 mt-48 lg:w-64 md:ml-12 md:mt-64 lg:mt-48 rounded-full shadow-lg"
             data-wow-delay=".8s"
           />
           <img
             src={appraisal1}
-            className="wow fadeInLeft absolute w-5/12 mt-96 ml-16 lg:w-64 lg:ml-36 rounded-full shadow-lg"
+            className="wow fadeInLeft absolute w-4/12 mt-96 ml-16 lg:w-64 lg:ml-36 rounded-full shadow-lg"
             data-wow-delay="1.6s"
           />
           <img
             src={appraisal1}
-            className="wow fadeInRight absolute w-5/12 mt-72 ml-52 lg:w-64 md:ml-16 md:mt-28 lg:ml-64 rounded-full shadow-lg"
+            className="wow fadeInRight absolute w-4/12 mt-72 ml-52 lg:w-64 md:ml-16 md:mt-28 lg:ml-64 rounded-full shadow-lg"
             data-wow-delay="1.2s"
           />
-          <div className="wow fadeInLeft mx-4 md:mx-0 flex justify-center">
+          <div className="wow fadeInLeft mt-10 w-11/12 mx-4 md:mx-0 flex justify-center">
             <img
               src={travel1}
-              className="float-right rounded-3xl lg:w-fit flex"
+              className="float-right rounded-3xl lg:w-fit md:ml-10 flex"
             />
           </div>
         </div>

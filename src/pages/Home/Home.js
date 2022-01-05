@@ -9,19 +9,25 @@ import Travel from "./Components/Travel";
 import Work from "./Components/Work";
 import Live from "./Components/Live";
 import TravelInfo from "./Components/TravelInfo";
+import Plan from "./Components/Plan";
+import Rank from "./Components/Rank";
+import Booking from "./Components/Booking";
 
 function Home() {
   return (
     <>
       <Header />
 
-      <section className="home">
+      <section className="home relative overflow-hidden">
         <Hero />
         <Adventure />
         <Travel />
         <Work />
         <Live />
         <TravelInfo />
+        <Plan />
+        <Rank />
+        <Booking />
       </section>
 
       <Footer />

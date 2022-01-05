@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Card from "./Card";
 
-import { FiChevronDown } from "react-icons/fi";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 import place1 from "../../../assets/Places/catalog-pic-1@2x.jpg";
 import place2 from "../../../assets/Places/catalog-pic-2@2x.jpg";
@@ -100,13 +100,13 @@ function TravelInfo() {
   };
 
   return (
-    <div className="wow fadeInUp mb-20 max-w-screen-xl mx-auto bg-slate-100 rounded-3xl">
-      <div className="text-center lg:text-left max-w-screen-lg mx-auto pt-20">
+    <div className="wow fadeInUp mb-20 md:mb-40 max-w-screen-xl mx-auto bg-slate-100 rounded-3xl">
+      <div className="text-center lg:text-left max-w-screen-xl mx-16 pt-20">
         <h1 className="text-5xl font-bold text-slate-900">Go somewhere</h1>
         <p className="text-2xl text-slate-500">Let's go on an adventure</p>
       </div>
       <div>
-        <div className="grid grid-cols-8 max-w-screen-lg mx-auto my-7 items-center">
+        <div className="grid grid-cols-8 max-w-screen-xl lg:mx-16 my-7 items-center">
           <div className="col-span-4 hidden lg:block">
             <button className="bg-slate-700 text-white font-bold px-4 py-1 mr-5 rounded-full">
               Featured
@@ -124,11 +124,15 @@ function TravelInfo() {
 
           <div className="col-span-8 md:col-span-4 lg:hidden">
             <button
-              className="border-2 rounded-xl pl-8 pr-21 mb-3 md:mb-0 py-2 font-bold flex lg:ml-80 ml-5"
+              className="border-2 bg-white rounded-xl pl-8 pr-21 mb-3 md:mb-0 py-2 font-bold flex lg:ml-80 ml-5"
               onClick={handleFilter}
             >
               Featured
-              <FiChevronDown className="absolute mt-1 ml-32" />
+              {filter ? (
+                <FiChevronDown className="rotate-180 transition duration-500 absolute mt-1 ml-32" />
+              ) : (
+                <FiChevronDown className="absolute mt-1 ml-32" />
+              )}
             </button>
             <div
               className={
@@ -156,11 +160,15 @@ function TravelInfo() {
 
           <div className="col-span-8 md:col-span-4 md:ml-2">
             <button
-              className="border-2 rounded-xl px-8 lg:px-7 py-2 font-bold flex lg:ml-80 ml-5"
+              className="border-2 bg-white rounded-xl px-8 lg:px-14 py-2 font-bold flex lg:ml-80 ml-5"
               onClick={handleSort}
             >
               Recently added
-              <FiChevronDown className="absolute mt-1 ml-32" />
+              {sort ? (
+                <FiChevronDown className="rotate-180 transition duration-500 absolute mt-1 ml-32 lg:ml-36" />
+              ) : (
+                <FiChevronDown className="absolute mt-1 ml-32 lg:ml-36" />
+              )}
             </button>
             <div
               className={
@@ -169,18 +177,18 @@ function TravelInfo() {
                   : "hidden"
               }
             >
-              <div className="mt-2 absolute z-50 bg-white rounded-xl text-left cursor-pointer shadow-sm border">
-                <h1 className="text-md pl-5 pr-12 lg:pr-10 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800 rounded-t-xl">
+              <div className="mt-2 absolute z-50 bg-white rounded-xl text-left lg:text-right cursor-pointer shadow-sm border">
+                <h1 className="text-md pl-5 pr-12 lg:pl-24 lg:pr-4 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800 rounded-t-xl">
                   Recently added
                 </h1>
-                <h1 className="text-md pl-5 pr-12 lg:pr-10 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800 rounded-b-xl">
+                <h1 className="text-md pl-5 pr-12 lg:pl-24 lg:pr-4 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800 rounded-b-xl">
                   Long added
                 </h1>
               </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-4 max-w-screen-lg gap-5 mx-auto pb-20">
+        <div className="grid grid-cols-4 max-w-screen-xl lg:mx-16 gap-5 pb-20">
           {locations.map((e, index) => (
             <Card key={index} data={e} />
           ))}
