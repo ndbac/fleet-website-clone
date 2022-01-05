@@ -2,9 +2,9 @@ import React from "react";
 
 import { BiChevronRight } from "react-icons/bi";
 
-import plan1 from "../../../assets/Plan/planning-pic-1.png";
-import plan2 from "../../../assets/Plan/planning-pic-2.png";
-import plan3 from "../../../assets/Plan/planning-pic-3.png";
+import plan1 from "../../assets/Plan/planning-pic-1.png";
+import plan2 from "../../assets/Plan/planning-pic-2.png";
+import plan3 from "../../assets/Plan/planning-pic-3.png";
 
 function Plan() {
   return (
@@ -16,9 +16,9 @@ function Plan() {
           Stacks is a production-ready library of stackable content blocks built
           in React Native.
         </h1>
-        <div class="group mb-6 flex items-center border-2 w-64 py-1 rounded-full border-slate-700">
+        <div className="group mb-6 flex items-center border-2 w-64 py-1 rounded-full border-slate-700">
           <input
-            class="focus:outline-none pl-5 w-52 rounded-full"
+            className="focus:outline-none pl-5 w-52 rounded-full"
             type="text"
             placeholder="Enter your phone number"
           />

@@ -1,7 +1,7 @@
 import React from "react";
 
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 import Hero from "./Components/Hero";
 import Adventure from "./Components/Adventure";
@@ -18,7 +18,7 @@ function Home() {
     <>
       <Header />
 
-      <section className="home relative overflow-hidden">
+      <section className="home overflow-hidden">
         <Hero />
         <Adventure />
         <Travel />

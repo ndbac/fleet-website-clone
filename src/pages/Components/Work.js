@@ -1,8 +1,8 @@
 import React from "react";
 
-import work1 from "../../../assets/Work/work-pic-1.png";
-import work2 from "../../../assets/Work/work-pic-2.png";
-import work3 from "../../../assets/Work/work-pic-3.png";
+import work1 from "../../assets/Work/work-pic-1.png";
+import work2 from "../../assets/Work/work-pic-2.png";
+import work3 from "../../assets/Work/work-pic-3.png";
 
 function Work() {
   return (

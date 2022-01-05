@@ -1,7 +1,7 @@
 import React from "react";
 
-import travel1 from "../../../assets/Travel/travel-pic-1.jpg";
-import appraisal1 from "../../../assets/Travel/appraisal-pic-1.png";
+import travel1 from "../../assets/Travel/travel-pic-1.jpg";
+import appraisal1 from "../../assets/Travel/appraisal-pic-1.png";
 
 function Travel() {
   return (

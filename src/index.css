@@ -20,7 +20,6 @@ body {
   margin-left: 37rem;
 }
 
-
 .pr-21 {
   padding-right: 5.32rem;
 }
@@ -53,6 +52,16 @@ body {
 
 .mt-90 {
   margin-top: 21rem;
+}
+
+.mt-110 {
+  margin-top: 28rem;
+}
+
+@media (min-width: 1024px) {
+  .max-h-profile {
+    max-height: 46rem;
+  }
 }
 
 .mt-100 {

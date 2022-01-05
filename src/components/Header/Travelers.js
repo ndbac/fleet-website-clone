@@ -9,7 +9,7 @@ function Travelers() {
   return (
     <div className="wow fadeInUp absolute w-72 container mt-8 py-1 rounded-2xl shadow-lg bg-white">
       <div className="text-left font-bold text-slate-500 mx-3 my-2">
-        <h1 className="text-white bg-slate-900 rounded-full pl-8 py-2 cursor-pointer">
+        <h1 className="text-white bg-slate-800 rounded-full pl-8 py-2 cursor-pointer">
           <AiOutlineMessage className="inline w-6 h-6 mr-2" />
           Stays
         </h1>

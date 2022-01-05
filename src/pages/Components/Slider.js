@@ -8,9 +8,9 @@ import SwiperCore, { Pagination, Navigation } from "swiper";
 
 import Camping from "./Camping";
 
-import Advanture1 from "../../../assets/Advantures/adventure-pic-1.svg";
-import Advanture2 from "../../../assets/Advantures/adventure-pic-2.svg";
-import Advanture3 from "../../../assets/Advantures/adventure-pic-3.svg";
+import Advanture1 from "../../assets/Advantures/adventure-pic-1.svg";
+import Advanture2 from "../../assets/Advantures/adventure-pic-2.svg";
+import Advanture3 from "../../assets/Advantures/adventure-pic-3.svg";
 
 SwiperCore.use([Pagination, Navigation]);
 

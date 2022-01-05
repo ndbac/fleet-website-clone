@@ -3,14 +3,14 @@ import Slider from "react-slick";
 
 import Author from "./Author";
 
-import host1 from "../../../assets/Rank/host-avatar-1.jpg";
-import pic1 from "../../../assets/Rank/host-pic-1@2x.jpg";
-import host2 from "../../../assets/Rank/host-avatar-2.jpg";
-import pic2 from "../../../assets/Rank/host-pic-2@2x.jpg";
-import host3 from "../../../assets/Rank/host-avatar-3.jpg";
-import pic3 from "../../../assets/Rank/host-pic-3@2x.jpg";
-import host4 from "../../../assets/Rank/host-avatar-4.jpg";
-import pic4 from "../../../assets/Rank/host-pic-4@2x.jpg";
+import host1 from "../../assets/Rank/host-avatar-1.jpg";
+import pic1 from "../../assets/Rank/host-pic-1@2x.jpg";
+import host2 from "../../assets/Rank/host-avatar-2.jpg";
+import pic2 from "../../assets/Rank/host-pic-2@2x.jpg";
+import host3 from "../../assets/Rank/host-avatar-3.jpg";
+import pic3 from "../../assets/Rank/host-pic-3@2x.jpg";
+import host4 from "../../assets/Rank/host-avatar-4.jpg";
+import pic4 from "../../assets/Rank/host-pic-4@2x.jpg";
 
 const data = [
   {
@@ -49,14 +49,6 @@ const data = [
     pic: pic2,
   },
 ];
-
-// const settings = {
-//   dots: false,
-//   infinite: true,
-//   speed: 500,
-//   slidesToShow: 4,
-//   slidesToScroll: 1,
-// };
 
 const settings = {
   dots: true,
@@ -99,13 +91,13 @@ function Rank() {
       <div className="flex mb-10 mx-10">
         <h1 className="font-bold text-5xl">
           Best hosts of the
-          <h1 className="font-bold text-blue-500 text-5xl">Month</h1>
+          <p className="font-bold text-blue-500 text-5xl">Month</p>
         </h1>
       </div>
       <div className="mx-10">
         <Slider {...settings}>
-          {data.map((data) => (
-            <Author data={data} />
+          {data.map((data, index) => (
+            <Author key={index} data={data} />
           ))}
         </Slider>
       </div>

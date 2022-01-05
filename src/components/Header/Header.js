@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Travelers from "./Travelers";
 import Language from "./Language";
@@ -35,14 +36,14 @@ function Header() {
   };
 
   return (
-    <div
-      className="grid grid-cols-5 md:grid-cols-10 py-4 md:mt-5 items-center max-w-screen-lg mx-auto"
-    >
+    <div className="grid grid-cols-5 md:grid-cols-10 py-4 md:mt-5 items-center max-w-screen-lg mx-auto">
       <div className="col-span-2">
-        <img
-          src={Logo}
-          className="h-10 pr-10 ml-5 lg:border-r-2 cursor-pointer"
-        />
+        <Link to="/">
+          <img
+            src={Logo}
+            className="h-10 pr-10 ml-5 lg:border-r-2 cursor-pointer"
+          />
+        </Link>
       </div>
 
       <div className="col-span-2 hidden md:block">
@@ -60,9 +61,11 @@ function Header() {
       </div>
 
       <div className="hidden md:block">
-        <h1 className="font-bold text-slate-500 hover:text-slate-900 cursor-pointer">
-          Support
-        </h1>
+        <Link to="/support">
+          <h1 className="font-bold text-slate-500 hover:text-slate-900 cursor-pointer">
+            Support
+          </h1>
+        </Link>
       </div>
 
       <div className="hidden md:block">
@@ -98,7 +101,12 @@ function Header() {
       {notice && <Notice />}
 
       <div className={dropdown ? "invisible" : "ml-4"}>
-        <img src={Avatar2} className="h-10 w-10 ml-5 md:ml-0 cursor-pointer" />
+        <Link to="/profile">
+          <img
+            src={Avatar2}
+            className="h-10 w-10 ml-5 md:ml-0 cursor-pointer"
+          />
+        </Link>
       </div>
 
       <div className="md:hidden flex items-center ml-4">

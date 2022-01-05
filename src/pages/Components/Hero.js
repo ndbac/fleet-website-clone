@@ -2,8 +2,8 @@ import React from "react";
 
 import { FiSearch } from "react-icons/fi";
 
-import mainPic1 from "../../../assets/Background/main-pic-1.jpg";
-import mainPicMobile1 from "../../../assets/Background/main-pic-mobile-1.jpg";
+import mainPic1 from "../../assets/Background/main-pic-1.jpg";
+import mainPicMobile1 from "../../assets/Background/main-pic-mobile-1.jpg";
 
 function Hero() {
   return (

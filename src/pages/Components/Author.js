@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { AiFillStar } from "react-icons/ai";
 
@@ -27,7 +28,11 @@ function Author({ data }) {
           </div>
         </div>
         <div className="mt-24 mb-10 text-center">
-          <h1 className="text-3xl font-bold group-hover:text-indigo-800 cursor-pointer">{data.name}</h1>
+          <Link to="/profile">
+            <h1 className="text-3xl font-bold group-hover:text-indigo-800 cursor-pointer">
+              {data.name}
+            </h1>
+          </Link>
           <p>{data.company}</p>
         </div>
       </div>

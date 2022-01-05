@@ -4,14 +4,14 @@ import Card from "./Card";
 
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-import place1 from "../../../assets/Places/catalog-pic-1@2x.jpg";
-import place2 from "../../../assets/Places/catalog-pic-2@2x.jpg";
-import place3 from "../../../assets/Places/catalog-pic-3@2x.jpg";
-import place4 from "../../../assets/Places/catalog-pic-4@2x.jpg";
-import place5 from "../../../assets/Places/catalog-pic-5@2x.jpg";
-import place6 from "../../../assets/Places/catalog-pic-6@2x.jpg";
-import place7 from "../../../assets/Places/catalog-pic-7@2x.jpg";
-import place8 from "../../../assets/Places/catalog-pic-1@2x.jpg";
+import place1 from "../../assets/Places/catalog-pic-1@2x.jpg";
+import place2 from "../../assets/Places/catalog-pic-2@2x.jpg";
+import place3 from "../../assets/Places/catalog-pic-3@2x.jpg";
+import place4 from "../../assets/Places/catalog-pic-4@2x.jpg";
+import place5 from "../../assets/Places/catalog-pic-5@2x.jpg";
+import place6 from "../../assets/Places/catalog-pic-6@2x.jpg";
+import place7 from "../../assets/Places/catalog-pic-7@2x.jpg";
+import place8 from "../../assets/Places/catalog-pic-1@2x.jpg";
 
 const locations = [
   {
@@ -145,10 +145,10 @@ function TravelInfo() {
                 <h1 className="text-md pl-5 pr-12 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800 rounded-t-xl">
                   Featured
                 </h1>
-                <h1 className="text-md pl-5 pr-12 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800 rounded-b-xl">
+                <h1 className="text-md pl-5 pr-12 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800">
                   Family-friendly
                 </h1>
-                <h1 className="text-md pl-5 pr-12 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800 rounded-b-xl">
+                <h1 className="text-md pl-5 pr-12 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800">
                   On sale
                 </h1>
                 <h1 className="text-md pl-5 pr-12 py-2 font-bold hover:bg-slate-100 hover:text-indigo-800 rounded-b-xl">

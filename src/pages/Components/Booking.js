@@ -3,7 +3,7 @@ import GLightbox from "glightbox";
 
 import { GoPlay } from "react-icons/go";
 
-import thumb from "../../../assets/Video/video-bg.jpg";
+import thumb from "../../assets/Video/video-bg.jpg";
 
 const lightbox = GLightbox({
   touchNavigation: true,
@@ -31,9 +31,9 @@ function Booking() {
   return (
     <div className="wow fadeInUp max-w-screen-xl mx-auto mb-28">
       <div className="grid grid-cols-3 mx-14 pt-8 mb-16">
-        <div className="col-span-2 md:col-span-1">
-          <h1 className="lowercase md:text-2xl text-slate-900">Feel travel ui kit</h1>
-          <h1 className="text-2xl md:text-5xl font-bold text-slate-900">
+        <div className="col-span-3 md:col-span-1">
+          <h1 className="lowercase text-lg md:text-2xl text-slate-900">Feel travel ui kit</h1>
+          <h1 className="text-5xl md:text-5xl font-bold text-slate-900">
             Book a ticket and just leave
           </h1>
         </div>
@@ -43,10 +43,10 @@ function Booking() {
           </button>
         </div>
       </div>
-      <div className="group rounded md:rounded-3xl overflow-hidden bg-black">
+      <div className="group rounded md:rounded-3xl overflow-hidden bg-black mx-5 xl:mx-0">
         <a onClick={handleClick}>
-          <GoPlay className="hidden xl:block text-white text-7xl absolute group-hover:scale-150 mt-80 ml-pic cursor-pointer"/>
-          <img src={thumb} className="cursor-pointer hover:opacity-80" />
+          <GoPlay className="hidden xl:block text-white text-7xl absolute group-hover:scale-150 mt-80 ml-pic cursor-pointer transition duration:800"/>
+          <img src={thumb} className="cursor-pointer hover:opacity-80 transition duration:800" />
         </a>
       </div>
     </div>

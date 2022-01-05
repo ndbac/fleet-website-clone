@@ -1,8 +1,8 @@
 import React from "react";
 
-import live1 from "../../../assets/Live/live-pic-1.png";
-import live2 from "../../../assets/Live/live-pic-2.png";
-import live3 from "../../../assets/Live/live-pic-3.png";
+import live1 from "../../assets/Live/live-pic-1.png";
+import live2 from "../../assets/Live/live-pic-2.png";
+import live3 from "../../assets/Live/live-pic-3.png";
 
 function Live() {
   return (
