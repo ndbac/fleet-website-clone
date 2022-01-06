@@ -9,7 +9,7 @@ function FaqText({ data }) {
 
   return (
     <div className="mb-5">
-      <div className="font-medium rounded-sm text-lg px-2 py-3 flex flex-row-reverse mt-2 cursor-pointer text-slate-900 border-t">
+      <div className="font-medium rounded-sm text-2xl px-2 py-3 flex flex-row-reverse mt-2 cursor-pointer text-slate-900 border-t">
         <div className="flex-auto hover:text-blue-700" onClick={handleClick}>
           {data.title}
         </div>

@@ -36,7 +36,7 @@ function Header() {
   };
 
   return (
-    <div className="grid grid-cols-5 md:grid-cols-10 py-4 md:mt-5 items-center max-w-screen-lg mx-auto">
+    <div className="grid grid-cols-5 md:grid-cols-10 py-4 md:mt-5 items-center max-w-screen-lg mx-auto relative z-50">
       <div className="col-span-2">
         <Link to="/">
           <img
@@ -83,9 +83,11 @@ function Header() {
       {language && <Language />}
 
       <div className="hidden col-span-2 md:block ml-4">
-        <button className="lg:px-4 lg:py-2 px-1 py-1 font-bold text-slate-500 border hover:bg-slate-800 hover:text-white rounded-full">
-          List your property
-        </button>
+        <Link to="property">
+          <button className="lg:px-4 lg:py-2 px-1 py-1 font-bold text-slate-500 border hover:bg-slate-800 hover:text-white rounded-full">
+            List your property
+          </button>
+        </Link>
       </div>
 
       <div className={dropdown ? "invisible" : "ml-12"}>

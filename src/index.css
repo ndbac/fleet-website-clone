@@ -36,6 +36,22 @@ body {
   }
 }
 
+@media (min-width: 640px) {
+  .w-max {
+    width: 40rem;
+  }
+}
+
+.mbmt-max {
+  margin-top: 21rem;
+}
+
+@media (min-width: 640px) {
+  .mdmt-max {
+    margin-top: 27rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .lgml-max {
     margin-left: 48rem;

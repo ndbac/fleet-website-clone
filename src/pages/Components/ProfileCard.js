@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { AiFillStar } from "react-icons/ai";
-import photo from "../../assets/ProfileCard/card-pic-1.jpg";
 
 function ProfileCard({ data }) {
   console.log(data);
@@ -16,15 +16,17 @@ function ProfileCard({ data }) {
         </div>
         <div className="w-10/12 mx-auto mt-5 flex">
           <div>
-            <h1 className="font-bold text-lg group-hover:text-indigo-900 cursor-pointer">
-              {data.name}
-            </h1>
-            <p className="text-sm cursor-pointer">
-              {data.service}
-            </p>
+            <Link to="/product">
+              <h1 className="font-bold text-lg group-hover:text-indigo-900 cursor-pointer">
+                {data.name}
+              </h1>
+            </Link>
+            <p className="text-sm cursor-pointer">{data.service}</p>
           </div>
           <div className="ml-4">
-            <h1 className="line-through font-bold text-red-500">{data.prvPrice}</h1>
+            <h1 className="line-through font-bold text-red-500">
+              {data.prvPrice}
+            </h1>
             <h1 className="font-bold text-green-500">{data.Price}</h1>
           </div>
         </div>

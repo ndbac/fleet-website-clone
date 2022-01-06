@@ -32,18 +32,18 @@ function FaqComp() {
         <div className="p-2 rounded">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/3 p-4 text-sm">
-              <div className="text-3xl lg:text-5xl">
+              <div className="text-3xl lg:text-6xl">
                 Frequently asked <span class="font-medium">Questions</span>
               </div>
-              <div className="my-2">Wondering how our service works ?</div>
-              <div className="mb-2">
+              <div className="my-2 text-xl">Wondering how our service works ?</div>
+              <div className="mb-2 text-xl">
                 Confused about how we can improve your business ?
               </div>
-              <div className="text-xs text-gray-600">
+              <div className="text-sm text-gray-600">
                 Dive into our FAQ for more details
               </div>
             </div>
-            <div className="md:w-2/3">
+            <div className="md:w-2/3 md:ml-5">
               <div className="p-4">
                 {data.map((e, index) => (
                   <FaqText key={index} data={e} />

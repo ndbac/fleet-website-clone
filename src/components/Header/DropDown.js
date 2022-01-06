@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DropDown() {
   return (
@@ -27,9 +28,11 @@ function DropDown() {
         </div>
 
         <div className="hover:border-l-4 hover:border-blue-900 py-3">
-          <h1 className="font-bold text-2xl ml-12 text-slate-400 hover:text-slate-900">
-            Support
-          </h1>
+          <Link to="/support">
+            <h1 className="font-bold text-2xl ml-12 text-slate-400 hover:text-slate-900">
+              Support
+            </h1>
+          </Link>
         </div>
       </div>
       <div className="container text-center mt-20">
