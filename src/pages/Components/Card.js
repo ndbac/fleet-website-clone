@@ -8,10 +8,12 @@ function Card(props) {
     <div className="col-span-4 md:col-span-2 lg:col-span-1 max-w-fit mx-auto">
       <div className="mx-5 lg:mx-0 rounded-2xl overflow-hidden bg-white shadow-sm group">
         <div className="h-54 overflow-hidden cursor-pointer">
-          <img
-            src={props.data.picture}
-            className="group-hover:scale-110 group-hover:-translate-y-1 transition ease-in-out duration-700"
-          />
+          <Link to="/product">
+            <img
+              src={props.data.picture}
+              className="group-hover:scale-110 group-hover:-translate-y-1 transition ease-in-out duration-700"
+            />
+          </Link>
         </div>
         <div className="w-10/12 mx-auto mt-5 flex">
           <div>

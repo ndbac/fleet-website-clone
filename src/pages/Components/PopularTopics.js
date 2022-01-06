@@ -70,8 +70,8 @@ function PopularTopics() {
 
           <div className="mt-20">
             <Slider {...settings}>
-              {data.map((e) => (
-                <PopularCard data={e} />
+              {data.map((e, index) => (
+                <PopularCard key={index} data={e} />
               ))}
             </Slider>
           </div>

@@ -33,7 +33,7 @@ function FaqComp() {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/3 p-4 text-sm">
               <div className="text-3xl lg:text-6xl">
-                Frequently asked <span class="font-medium">Questions</span>
+                Frequently asked <span className="font-medium">Questions</span>
               </div>
               <div className="my-2 text-xl">Wondering how our service works ?</div>
               <div className="mb-2 text-xl">

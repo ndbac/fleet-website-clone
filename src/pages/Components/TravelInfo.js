@@ -100,7 +100,7 @@ function TravelInfo() {
   };
 
   return (
-    <div className="wow fadeInUp mb-20 md:mb-40 max-w-screen-xl mx-auto bg-slate-100 rounded-3xl">
+    <div className="wow fadeInUp mb-20 md:mb-40 max-w-screen-xl mx-auto bg-gray-50 rounded-3xl">
       <div className="text-center lg:text-left max-w-screen-xl mx-16 pt-20">
         <h1 className="text-5xl font-bold text-slate-900">Go somewhere</h1>
         <p className="text-2xl text-slate-500">Let's go on an adventure</p>

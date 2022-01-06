@@ -27,7 +27,7 @@ function ProfileCard({ data }) {
             <h1 className="line-through font-bold text-red-500">
               {data.prvPrice}
             </h1>
-            <h1 className="font-bold text-green-500">{data.Price}</h1>
+            <h1 className="font-bold text-green-500">{data.price}</h1>
           </div>
         </div>
         <div className="flex mt-3 pb-5 w-10/12 mx-auto items-center">

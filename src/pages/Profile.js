@@ -19,7 +19,9 @@ function Profile() {
             <img src={background} className="absolute -z-10 rounded-3xl" />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3">
-            <SideBarProfile />
+            <div className="lg:ml-16 lg:mr-8 lg:mt-64">
+              <SideBarProfile />
+            </div>
             <ProfileWall />
           </div>
         </div>

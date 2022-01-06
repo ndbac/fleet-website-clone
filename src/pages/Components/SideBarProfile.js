@@ -10,9 +10,9 @@ import { TiSocialFacebookCircular } from "react-icons/ti";
 
 function SideBarProfile() {
   return (
-    <div className="col-span-1 max-h-profile pb-10 bg-white border rounded-3xl mx-4 lg:ml-16 lg:mr-8 lg:mt-64 overflow-hidden text-center">
+    <div className="col-span-1 max-h-profile pb-10 bg-white border rounded-3xl mt-10 lg:mt-10 mx-4 md:mx-24 lg:mx-4 overflow-hidden text-center">
       <div className="mt-10">
-        <img src={avatar} className="block w-7/12 mx-auto" />
+        <img src={avatar} className="block md:w-4/12 w-7/12 mx-auto" />
       </div>
       <div className="mt-6 flex justify-center items-center">
         <h1 className="font-bold text-4xl mr-2">Zoe Towne</h1>
